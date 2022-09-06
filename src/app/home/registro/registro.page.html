@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="centro">
+    <ion-text>
+      <h2>Registrate</h2>
+    </ion-text>
+    <ion-button fill="outline" color="dark" class="ancho" size="large">
+      Google
+    </ion-button>
+    <ion-button fill="outline" color="dark" class="ancho" size="large">
+      Facebook
+    </ion-button>
+    <ion-button fill="outline" color="dark" class="ancho" routerLink="../registrarse" size="large">
+      E-mail
+    </ion-button>
+    <ion-text class=ion-text-right>
+      <p>¿Ya estas registrado? <a routerLink="../login">ingresa a tu cuenta</a></p>
+    </ion-text>
+
+  </div>
+  <ion-text class="baseline"><p class="footer">al registrarme acepto los <span class="subrayado">terminos y condiciones</span> y la <span class="subrayado">politica de privacidad</span> de agrocargas</p></ion-text>
+</ion-content>

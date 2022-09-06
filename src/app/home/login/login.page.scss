@@ -1,0 +1,27 @@
+.centro{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+.ancho{
+    width: 100%;
+}
+
+.crear{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+p{
+    font-size: 1.2rem;
+}
+
+.crearC{
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+}
