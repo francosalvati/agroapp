@@ -6,28 +6,32 @@ import { AppPage } from './app.page';
 const routes: Routes = [
   {
     path: '',
-    component: AppPage
+    component: AppPage,
+    children:[
+      {
+        path: 'cargas',
+        loadChildren: () => import('./cargas/cargas.module').then( m => m.CargasPageModule)
+      },
+      {
+        path:'',
+        redirectTo:'cargas',
+        pathMatch:"full"
+      },
+      {
+        path: 'viajes',
+        loadChildren: () => import('./viajes/viajes.module').then( m => m.ViajesPageModule)
+      },
+      {
+        path: 'credito',
+        loadChildren: () => import('./credito/credito.module').then( m => m.CreditoPageModule)
+      },
+      {
+        path: 'perfil',
+        loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
+      }
+    ]
   },
-  {
-    path: 'cargas',
-    loadChildren: () => import('./cargas/cargas.module').then( m => m.CargasPageModule)
-  },
-  {
-    path: 'viajes',
-    loadChildren: () => import('./viajes/viajes.module').then( m => m.ViajesPageModule)
-  },
-  {
-    path: 'credito',
-    loadChildren: () => import('./credito/credito.module').then( m => m.CreditoPageModule)
-  },
-  {
-    path: 'perfil',
-    loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
-  },
-  {
-    path: 'tab',
-    loadChildren: () => import('./tab/tab.module').then( m => m.TabPageModule)
-  }
+  
 ];
 
 @NgModule({

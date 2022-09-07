@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { ViajesPageRoutingModule } from './viajes-routing.module';
 
 import { ViajesPage } from './viajes.page';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ViajesPageRoutingModule
+    ViajesPageRoutingModule,
+    SharedModule
   ],
   declarations: [ViajesPage]
 })
