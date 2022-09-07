@@ -1,9 +1,98 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>perfil</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="notifications-outline"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="grid-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <h2>mi información</h2>
+  <ion-card>
+    <ion-item class="ion-text-center">
+      <ion-icon class="ion-padding" name="accessibility-outline"></ion-icon>
+      <ion-text>
+        informacion personal
+      </ion-text>
+      <ion-buttons slot="end">
+        <ion-button>
+          <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
 
+    <ion-item>
+      <ion-icon class="ion-padding" name="star-outline"></ion-icon>
+      <ion-text>
+        Mi reputacion
+      </ion-text>
+      <ion-buttons slot="end">
+        <ion-button>
+          <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon class="ion-padding" name="document-text-outline"></ion-icon>
+      <ion-text>
+        Datos de Facturacion
+      </ion-text>
+      <ion-buttons slot="end">
+        <ion-button>
+          <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon class="ion-padding" name="document-text-outline"></ion-icon>
+      <ion-text>
+        Documentacion
+      </ion-text>
+      <ion-buttons slot="end">
+        <ion-button>
+          <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-icon class="ion-padding" name="shield-checkmark"></ion-icon>
+      <ion-text>
+        Validar identidad
+      </ion-text>
+      <ion-buttons slot="end">
+        <ion-button>
+          <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon class="ion-padding" name="notifications-outline"></ion-icon>
+      <ion-text>
+        Notificaciones
+      </ion-text>
+      <ion-buttons slot="end">
+        <ion-button>
+          <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+
+    <ion-item routerLink="../../home">
+      <ion-icon name="exit-outline" class="ion-padding"></ion-icon>
+      <ion-text>
+        Cerrar sesion
+      </ion-text> </ion-item>
+  </ion-card>
 </ion-content>

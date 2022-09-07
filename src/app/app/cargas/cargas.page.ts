@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CargasPage implements OnInit {
 
+  list:any[] = []
   constructor() { }
 
   ngOnInit() {
+    this.list = ['carga 1','carga 2', 'carga 3']
   }
 
 }

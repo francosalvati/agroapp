@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreditoPage implements OnInit {
 
+  movimientos:string[] = []
+
   constructor() { }
 
   ngOnInit() {
+    this.movimientos = ['14/07 Publicacion carga n° 6123', '14/07 Publicacion carga n° 6123',
+    '14/07 Publicacion carga n° 6123' ]
   }
 
 }

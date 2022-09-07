@@ -5,5 +5,32 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-card>
+    <ion-text class="centrar">
+      <p>credito disponible</p>
+      <h3>$ 15.000</h3>
+    </ion-text>
+  </ion-card>
+  <ion-item>
+    <h4>ultimos movimientos</h4>
+  </ion-item>
+  <ion-list *ngFor="let movimiento of movimientos">
+    <ion-item>
+      <p class="ion-text-">{{movimiento}}</p>
+    </ion-item>
+  </ion-list>
+  <ion-item>
+    <ion-text>
+      <p class="ion-text-start">
+        Ver facturas
+      </p>
+    </ion-text>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-item>
+<section class="btn"> <ion-button color="medium" size="medium" expand="full">Comprar crédito</ion-button></section>
+ 
 </ion-content>

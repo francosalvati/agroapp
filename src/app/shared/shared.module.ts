@@ -17,6 +17,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSelectModule} from '@angular/material/select';
 import {MatListModule} from '@angular/material/list';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+
 
 @NgModule({
   declarations: [],
@@ -37,7 +39,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatGridListModule,
     MatSelectModule,
     MatListModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatButtonToggleModule
     
 
   ],
@@ -57,7 +60,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatGridListModule,
     MatSelectModule,
     MatListModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatButtonToggleModule
     
 
   ]

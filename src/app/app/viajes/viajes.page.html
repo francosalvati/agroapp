@@ -1,9 +1,30 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>viajes</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="notifications-outline"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="grid-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <div>
+    <mat-button-toggle-group appearance="legacy" name="cargas" class="btn-tgl">
+      <mat-button-toggle value="cargasD" class="width-full">Cargas Disponibles</mat-button-toggle>
+      <mat-button-toggle value="cargasO">Cargas ofertadas</mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
 
+  <ion-card>
+    <ion-list>
+      <ion-item *ngFor="let item of list">
+        <p>{{item}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-card>
 </ion-content>
