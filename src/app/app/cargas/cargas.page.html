@@ -16,14 +16,14 @@
 <div>
   <mat-button-toggle-group appearance="legacy" name="cargas" class="btn-tgl">
     <mat-button-toggle value="cargasD" class="width-full">Cargas Disponibles</mat-button-toggle>
-    <mat-button-toggle value="cargasO">Cargas ofertadas</mat-button-toggle>
+    <mat-button-toggle value="cargasO" class="width-full">Cargas ofertadas</mat-button-toggle>
   </mat-button-toggle-group>
 </div>
   
 
   <ion-card>
     <ion-list>
-      <ion-item *ngFor="let item of list">
+      <ion-item *ngFor="let item of list" routerLink="carga">
         <p>{{item}}</p>
       </ion-item>
     </ion-list>

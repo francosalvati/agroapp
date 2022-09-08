@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+  <ion-back-button defaultHref="/app"></ion-back-button>
+  </ion-buttons>
+    <ion-title>carga</ion-title>
+  </ion-toolbar>
+  <ion-buttons slot="end">
+    <ion-button>
+      <ion-icon name="notifications-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-header>
+
+<ion-content>
+ <section class="ion-padding">
+   <ion-text>
+     <h2>Datos de la carga</h2>
+   </ion-text>
+   <ion-text>
+     <h3>Titulo de maquina</h3>
+     <ul>
+       <li>Tipo de maquinaria</li>
+       <li>Ancho maquinaria</li>
+       <div class="tamaño">
+         <li>Ancho:</li>
+         <li>Largo:</li>
+         <li>Alto:</li>
+         <li>Peso:</li>
+       </div>
+     </ul>
+   </ion-text>
+ </section>
+  <section class="ion-padding">
+    <h2>Datos del viaje</h2>
+    <ul>
+      <li>Oigen:</li>
+      <li>Destino:</li>
+      <li>Distancia:</li>
+      <li>Fecha:</li>
+    </ul>
+  </section>
+  <div class="full-width">
+    <ion-thumbnail slot="start" class="full-width" >
+      <ion-img [src]="img"></ion-img>
+    </ion-thumbnail>
+  </div>
+  <section class="ion-padding">
+    <h2>Datos del dador</h2>
+    <ul>
+      <li>Valoraciones <button mat-icon-button class="btn"><ion-icon name="chevron-down-outline"></ion-icon></button></li>
+      <li>Miembro desde:</li>
+      <li>Operaciones concretadas:</li>
+      <li>Usuario verificado:</li>
+    </ul>
+  </section>
+  <ion-button color="dark" expand="block" class="ion-padding" size="medium" routerLink="../ofertar">ofertar</ion-button>
+</ion-content>

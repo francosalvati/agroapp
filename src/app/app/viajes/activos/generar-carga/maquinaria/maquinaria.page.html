@@ -1,0 +1,38 @@
+<ion-card class="card">
+  <form class="formulario" (submit)="enviarformulario()">
+    <mat-label>informacion de la maquinaria</mat-label>
+    <mat-form-field appearance="outline">
+      <mat-select placeholder="selecciona tipo de maquinaria">
+        <mat-option *ngFor="let maquinaria of maquinarias" value="maquinaria.value" (click)="mostrar(maquinaria.value)">
+          {{maquinaria.tipo}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>marca y modelo de la maquinaria</mat-label>
+      <textarea matInput></textarea>
+    </mat-form-field>
+    <h3>medidas de la maquinaria</h3>
+    <mat-label>¿el ancho supera los 260cm?</mat-label>
+    <ion-item>
+      <mat-radio-group>
+        <mat-radio-button class="radio" value="no">no</mat-radio-button>
+        <mat-radio-button class="radio" value="si">si</mat-radio-button>
+      </mat-radio-group>
+    </ion-item>
+    <div>
+      <mat-form-field class="tamaños" appearance="outline">
+        <input matInput placeholder="ancho">
+      </mat-form-field>
+      <mat-form-field class="tamaños" appearance="outline">
+        <input matInput placeholder="largo">
+      </mat-form-field>
+      <mat-form-field class="tamaños" appearance="outline">
+        <input matInput placeholder="alto">
+      </mat-form-field>
+      <mat-form-field class="tamaños" appearance="outline">
+        <input matInput placeholder="peso">
+      </mat-form-field>
+      <ion-button class="btn" type="submit" color="dark">publicar carga</ion-button>
+    </div>
+  </form>
+</ion-card>

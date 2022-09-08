@@ -1,0 +1,20 @@
+.card{ 
+    display: flex;
+    justify-content: center;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem;
+}
+.btn{
+    display: flex;
+    justify-content: end;
+}
+.radio{
+    padding: 2rem;
+}
+.tamaños{
+    width: 50%;
+}

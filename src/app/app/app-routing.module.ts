@@ -31,6 +31,10 @@ const routes: Routes = [
       }
     ]
   },
+  {
+    path: 'pagar',
+    loadChildren: () => import('./pagar/pagar.module').then( m => m.PagarPageModule)
+  },
   
 ];
 

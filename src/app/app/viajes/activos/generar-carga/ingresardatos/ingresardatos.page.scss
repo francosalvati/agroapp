@@ -1,0 +1,15 @@
+.card{ 
+    display: flex;
+    justify-content: center;
+    height: 65%;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem;
+}
+.btn{
+    display: flex;
+    justify-content: end;
+}

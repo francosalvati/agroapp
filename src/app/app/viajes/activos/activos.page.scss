@@ -1,0 +1,60 @@
+.whatsapp{
+    display: flex;
+    color: #fff;
+    background-color: #333;
+    width: 100%;
+}
+.icono{
+    height: 3rem;
+    width: 100%;
+    position: relative;
+    top: 2.5rem;
+    left: 3rem;
+}
+
+ul{
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+    list-style: none;
+}
+li:not(.title){
+    text-transform: none;
+}
+.separador{
+    width: 100%;
+    height: 2px;
+    background-color: #222;
+}
+.asignar{
+    display: flex;
+}
+.btn-asignar{
+    position: relative;
+    top: 5rem;
+    right: 2rem;
+}
+.dador{
+    padding-bottom: 1rem;
+    padding-inline: 1rem;
+    text-transform: none;
+}
+.subtitulo{
+    padding-inline: 1rem;
+    background-color: #eee;
+    color: #888;
+    text-transform: uppercase;
+}
+
+h2,h3,p{
+    margin: 0px;
+    text-transform: none;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.data{
+    margin-top: 10px;
+}
+ 

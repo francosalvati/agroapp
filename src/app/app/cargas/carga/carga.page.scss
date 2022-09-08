@@ -1,0 +1,26 @@
+*:not(ion-title){
+    text-transform: none;
+}
+
+
+.tamaño{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
+   
+}
+
+.full-width{
+    height: 10rem;
+    width: 100%;
+
+}
+
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+}
+h2{
+    color: #aaa;
+}

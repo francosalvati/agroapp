@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>pagar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="detalle">
+    <h3>detalles de tu compra</h3>
+    <ion-list>
+      <ion-item></ion-item>
+    </ion-list>
+  </ion-card>
+
+  <ion-card class="forma de pago">
+    <ion-item>
+      <ion-icon name="card-outline" class="ion-padding"></ion-icon>
+      <ion-text class="texto">
+        <p>nueva tarjeta</p>
+        <mat-hint> debito o credito</mat-hint>
+      </ion-text>
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="cash-outline" class="ion-padding"></ion-icon>
+      <ion-text class="texto">
+        <p>efectivo</p>
+        <mat-hint> pagofacil, Rapipago y kioscos</mat-hint>
+      </ion-text>
+
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+    </ion-item>
+  </ion-card>
+
+
+  <ion-button class="btn" color="secondary" routerLink="/app">pagar</ion-button>
+  <section class="ion-padding"><a routerLink="/app">
+      <ion-icon name="chevron-back-outline"></ion-icon><span class="link">Volver al sitio</span> 
+    </a></section>
+</ion-content>

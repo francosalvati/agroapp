@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="app/viajes"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{viaje.numero}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card>
+    <div class="ion-padding">
+      <ion-text class="data flex" ><p>Fecha: <span>{{viaje.fecha}}</span></p></ion-text>
+      <ion-text class="data flex"><p>Camion: <span>{{viaje.camion}}</span></p> <p>Remolque: <span>{{viaje.remolque}}</span></p></ion-text>
+      <ion-text class="data flex" ><p>Puede trasnportar: <span>{{viaje.tipo}}</span></p></ion-text>
+    </div>
+  </ion-card>
+  
+  <h2 class="subtitulo">ofertas recibidas</h2>
+
+  <div class="contenedor" >
+    <ion-list *ngFor="let dador of dadores">
+      <section class="dador">
+        <h3>{{dador.nombre}}</h3>
+        <p>Detalle de la carga: {{dador.detalle}}</p>
+      </section>
+      <div class="whatsapp">
+        <ul class="width-full">
+          <li class="title">datos de contacto</li>
+          <li>telefono:</li>
+          <li>E-Mail:</li>
+          <li>Dirección:</li>
+        </ul>
+        <ion-icon name="logo-whatsapp" class="icono"></ion-icon>
+      </div>
+      <section class="asignar">
+        <ul>
+          <li>Valoraciones <button mat-icon-button >
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </button></li>
+          <li>Miembro desde:</li>
+          <li>Operaciones concretadas: {{dador.operaciones}}</li>
+          <li>Usuario verificado: {{dador.verificacion}}</li>
+        </ul>
+        <ion-button class="btn-asignar" color="dark" (click)="asignar()">asignar</ion-button>
+      
+      </section>
+      <div class="separador"></div>
+    </ion-list>
+   
+  </div>
+</ion-content>
